@@ -31,7 +31,7 @@
     
     <aop:config>
         <!-- <aop:pointcut id="transactionPointcut" expression="execution(* com.nxyhj.pasture.service..*SVImpl.*(..))" /> -->
-        <aop:pointcut id="transactionPointcut" expression="execution(* ccom.ai.ysm..*SVImpl.*(..))" />
+        <aop:pointcut id="transactionPointcut" expression="execution(* com.ai.ysm..*ServiceImpl.*(..))" />
         <aop:advisor pointcut-ref="transactionPointcut" advice-ref="transactionAdvice" />
     </aop:config>
 	
