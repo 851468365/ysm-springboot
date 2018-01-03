@@ -14,134 +14,580 @@
         <h3>&nbsp;&nbsp;&nbsp;项目介绍</h3>
         <ul>
             <li>
-H5网站：
-描述：H5网站，承载商品销售业务，涉及虚拟商品和实物商品的销售
-1云商盟商城首页
-描述：聚合各个商家热销商品，前期通过配置化展示在聚合页中
-前台聚合页商品展示
-配置化展示（依赖后台配置功能）
-2店铺首页
-首页配置化展示
-店铺分享功能
-3商品列表页
-3.1 商品排序
-3.1.1 销量
-3.1.2 人气
-3.2 商品搜索
-使用es搜索引擎服务
-4商品单品展示页
-4.1商品信息展示
-4.2图片展示 
-4.3库存量展示
-4.4商品分享功能
-4.5推荐信息展示（通过大数据接口分析出用户推荐信息）
-5购买
-5.1订单信息填写
-5.2 订单提交
-6订单查询
-6.1订单页：展示订单信息
-6.2个人信息维护：配送信息维护
-6.3未支付订单继续支付
-后台管理系统：
-订单模块：
-描述：订单商品涉及三种：1 自有商品2 异业商品 （商户自有商品）3供应商商品（资源池中的商品）
-仓储系统可通过后台查看订单信息，操作订单备货信息，配送信息
-（仅支持自有商品备货，配送）
-1、订单管理
-1.1订单按时间查询
-1.2订单类型查询
-1.3订单号查询
-1.4详细信息展示
-1.5订单取消
-2、备货管理
-2.1 备货单查询
-2.2 实物商品串号导入——》终端管理系统串号的保存 出库等
-2.3 备货确认
-3、支付单一览
-3.1 支付单查询
-3.2 支付单退款
-3.3 退款审核
-4、配送单一览
-4.1 配送单查询
-4.2 配送单详情
- 4.3实时物流信息展示 ——》仓储系统接口获取实时物流信息
-
-商品模块：
-商品表属性：
-商品信息
-是否上线（0待审批 1审批通过 2上线 3下线 ）注：审批和待审批针对异业商品
-商品等级（对应资源池商品等级 对应店铺等级）
-商品所属店铺
-
-商品类型
-描述：商品涉及三种（1自有商品2异业商品3供应商商品）
-
-1、商品配置
-1.1商户异业商品配置
-描述：商品由店铺自行配置本店铺商品，展示在自己的店铺商品列表中，物流由店铺自己联系配送
-1.1.1商品标签配置
-1.1.2价格配置
-1.1.3库存配置
-1.1.4详情描述
-1.1.5商品分类
-1.1.6配置商品图片
-1.2资源池商品配置
-描述：资源池商品由供应商（例如：京东）提供，管理员负责导入到资源池系统
-1.2.1供应商商品配置
-1.2.2商品标签配置
-1.2.3价格配置
-1.2.4库存配置
-1.2.5 商户可选最大库存配置
-1.2.6详情描述
-1.2.7商品分类
-1.2.8配置商品图片
-1.2.9商品等级配置（指定店铺等级可销售）
-
-1.3自有商品信息配置
-描述：商品归属于北京移动资产，库存等信息从终端系统接口获取，因为商品存在于终端系统，所以需要根据终端系统商品编号来调用借口配置，商品配置过程中涉及商品编号映射（例如：商品在终端系统编号为123，需要映射为云商盟商品编号456），物流走北京移动自建物流，
-
-1.3.1终端产品配置
-1.3.1商品标签配置
-1.3.2价格配置
-1.3.3库存配置
-1.3.4详情描述
-1.3.5商品分类
-1.3.6配置商品图片
 
 
-2、商品信息查询
-描述：根据登陆商铺信息可查询展示自己店铺的商品，管理员可查全部商品
-2．1 根据商品名称模糊查询
-2．2 商品信息单品展示
-2．3 商品信息列表展示
-2．4 商品分配查询
-2．5 商品配置预览
 
-3、资源池商品分配
-描述： 资源池中商品所有商户可见，根据商品配置的等级，商户可以按照自己店铺的等级自选商品，或者由移动管理员分配商品到指定店铺
-3.1 按等级资源自选
-3.2 管理员资源分配
- 
-店铺模块	
-1店铺管理
-云商盟首页商品配置
-店铺首页商品配置
-店铺创建
-店铺开启关闭
-店铺等级配置
-店铺黑名单管理
-店铺经纬度配置
-2店铺装修功能
-H5店铺页面后台配置
-店铺信息配置
-店铺宣传图片配置
-配置店铺首页预览
-3商品管理
-异业商品审核
-4供应商管理
-供应商审核
-5店铺酬金统计
-描述：通过渠道接口获取统计信息
+
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Content-Type  content="text/html; charset=gb2312" ><meta name=ProgId  content=Word.Document ><meta name=Generator  content="Microsoft Word 14" ><meta name=Originator  content="Microsoft Word 14" ><title></title><!--[if gte mso 9]><xml><w:WordDocument><w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel><w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery><w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery><w:DocumentKind>DocumentNotSpecified</w:DocumentKind><w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing><w:PunctuationKerning></w:PunctuationKerning><w:View>Web</w:View><w:Compatibility><w:DontGrowAutofit/><w:BalanceSingleByteDoubleByteWidth/><w:DoNotExpandShiftReturn/><w:UseFELayout/></w:Compatibility><w:Zoom>0</w:Zoom></w:WordDocument></xml><![endif]--><!--[if gte mso 9]><xml><w:LatentStyles DefLockedState="false"  DefUnhideWhenUsed="true"  DefSemiHidden="true"  DefQFormat="false"  DefPriority="99"  LatentStyleCount="260" >
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Normal" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  QFormat="true"  Name="heading 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  QFormat="true"  Name="heading 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  QFormat="true"  Name="heading 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  QFormat="true"  Name="heading 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  QFormat="true"  Name="heading 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  QFormat="true"  Name="heading 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  QFormat="true"  Name="heading 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  QFormat="true"  Name="heading 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="index 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="index 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="index 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="index 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="index 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="index 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="index 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="index 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="index 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  Name="toc 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  Name="toc 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  Name="toc 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  Name="toc 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  Name="toc 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  Name="toc 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  Name="toc 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  Name="toc 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  Name="toc 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Normal Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="footnote text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="annotation text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="header" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="footer" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="index heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="35"  SemiHidden="false"  QFormat="true"  Name="caption" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="table of figures" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="envelope address" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="envelope return" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="footnote reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="annotation reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="line number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="page number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="endnote reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="endnote text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="table of authorities" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="macro" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="toa heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Bullet" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Bullet 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Bullet 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Bullet 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Bullet 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Number 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Number 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Number 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Number 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="10"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Title" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Closing" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Signature" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="1"  SemiHidden="false"  Name="Default Paragraph Font" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Body Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Body Text Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Continue" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Continue 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Continue 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Continue 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Continue 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Message Header" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="11"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Subtitle" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Salutation" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Date" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Body Text First Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Body Text First Indent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Note Heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Body Text 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Body Text 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Body Text Indent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Body Text Indent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Block Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Hyperlink" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="FollowedHyperlink" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="22"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Strong" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="20"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Emphasis" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Document Map" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Plain Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="E-mail Signature" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Normal (Web)" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="HTML Acronym" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="HTML Address" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="HTML Cite" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="HTML Code" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="HTML Definition" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="HTML Keyboard" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="HTML Preformatted" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="HTML Sample" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="HTML Typewriter" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="HTML Variable" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Normal Table" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="annotation subject" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="No List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Simple 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Simple 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Simple 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Classic 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Classic 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Classic 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Classic 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Colorful 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Colorful 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Colorful 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table 3D effects 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table 3D effects 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table 3D effects 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Contemporary" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Elegant" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Professional" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Subtle 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Subtle 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Web 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Web 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Web 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Balloon Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="59"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Theme" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Placeholder Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="No Spacing" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="34"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="List Paragraph" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Quote" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Intense Quote" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 6" ></w:LsdException>
+</w:LatentStyles></xml><![endif]--><style>
+@font-face{
+font-family:"Times New Roman";
+}
+
+@font-face{
+font-family:"宋体";
+}
+
+@font-face{
+font-family:"Cambria";
+}
+
+@font-face{
+font-family:"Wingdings";
+}
+
+@list l0:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:22.0000pt;text-indent:-22.0000pt;font-family:宋体;}
+
+@list l0:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:58.0000pt;text-indent:-22.0000pt;font-family:宋体;}
+
+@list l0:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.%3";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:108.0000pt;text-indent:-36.0000pt;font-family:宋体;}
+
+@list l0:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.%3.%4";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:162.0000pt;text-indent:-54.0000pt;font-family:宋体;}
+
+@list l0:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.%3.%4.%5";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:198.0000pt;text-indent:-54.0000pt;font-family:宋体;}
+
+@list l0:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.%3.%4.%5.%6";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:252.0000pt;text-indent:-72.0000pt;font-family:宋体;}
+
+@list l0:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.%3.%4.%5.%6.%7";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:288.0000pt;text-indent:-72.0000pt;font-family:宋体;}
+
+@list l0:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.%3.%4.%5.%6.%7.%8";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:342.0000pt;text-indent:-90.0000pt;font-family:宋体;}
+
+@list l0:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.%2.%3.%4.%5.%6.%7.%8.%9";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:378.0000pt;text-indent:-90.0000pt;font-family:宋体;}
+
+@list l1:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1、";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:36.0000pt;text-indent:-36.0000pt;font-family:宋体;}
+
+@list l1:level2{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%2)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:48.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l1:level3{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:72.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l1:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:96.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l1:level5{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%5)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:120.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l1:level6{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:144.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l1:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:168.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l1:level8{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%8)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:192.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l1:level9{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:216.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l2:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1、";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:37.0000pt;text-indent:-37.0000pt;font-family:宋体;}
+
+@list l2:level2{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%2)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:48.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l2:level3{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:72.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l2:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:96.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l2:level5{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%5)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:120.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l2:level6{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:144.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l2:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:168.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l2:level8{
+mso-level-number-format:alpha-lower;
+mso-level-suffix:tab;
+mso-level-text:"%8)";
+mso-level-tab-stop:none;
+mso-level-number-position:left;
+margin-left:192.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+@list l2:level9{
+mso-level-number-format:lower-roman;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:none;
+mso-level-number-position:right;
+margin-left:216.0000pt;text-indent:-24.0000pt;font-family:'Times New Roman';}
+
+p.MsoNormal{
+mso-style-name:正文;
+mso-style-parent:"";
+margin:0pt;
+margin-bottom:.0001pt;
+mso-pagination:none;
+text-align:justify;
+text-justify:inter-ideograph;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+mso-font-kerning:1.0000pt;
+}
+
+span.10{
+font-family:Cambria;
+}
+
+p.15{
+mso-style-name:"List Paragraph";
+margin:0pt;
+margin-bottom:.0001pt;
+text-indent:21.0000pt;
+mso-char-indent-count:2.0000;
+mso-pagination:none;
+text-align:justify;
+text-justify:inter-ideograph;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+mso-font-kerning:1.0000pt;
+}
+
+span.msoIns{
+mso-style-type:export-only;
+mso-style-name:"";
+text-decoration:underline;
+text-underline:single;
+color:blue;
+}
+
+span.msoDel{
+mso-style-type:export-only;
+mso-style-name:"";
+text-decoration:line-through;
+color:red;
+}
+
+table.MsoNormalTable{
+mso-style-name:普通表格;
+mso-style-parent:"";
+mso-style-noshow:yes;
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-padding-alt:0.0000pt 5.4000pt 0.0000pt 5.4000pt;
+mso-para-margin:0pt;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-family:'Times New Roman';
+font-size:10.0000pt;
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;
+}
+@page{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}@page Section0{
+margin-top:72.0000pt;
+margin-bottom:72.0000pt;
+margin-left:90.0000pt;
+margin-right:90.0000pt;
+size:595.0000pt 842.0000pt;
+layout-grid:15.6000pt;
+}
+div.Section0{page:Section0;}</style></head><body style="tab-interval:21pt;text-justify-trim:punctuation;" ><!--StartFragment--><div class="Section0"  style="layout-grid:15.6000pt;" ><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >开发功能点统计：</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><b><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-weight:bold;font-size:12.0000pt;mso-font-kerning:1.0000pt;" >H5<font face="宋体" >网站：</font></span></b><b><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-weight:bold;font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></b></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:6.5000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >描述：</font>H5<font face="宋体" >网站，承载商品销售业务，涉及虚拟商品和实物商品的销售</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:6.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="mso-outline-level:1;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1<font face="宋体" >云商盟商城首页</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:6.5000pt;mso-font-kerning:1.0000pt;" >&nbsp;<font face="宋体" >描述：聚合各个商家热销商品，前期通过配置化展示在聚合页中</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:6.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:6.5000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >前台聚合页商品展示</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;&nbsp;<font face="宋体" >配置化展示（依赖后台配置功能）</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="mso-outline-level:1;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >2<font face="宋体" >店铺首页</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&#9;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >首页配置化展示</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >店铺分享功能</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="mso-outline-level:1;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >3<font face="宋体" >商品列表页</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;3.1&nbsp;<font face="宋体" >商品排序</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="text-indent:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >3.1.1&nbsp;<font face="宋体" >销量</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="text-indent:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >3.1.2&nbsp;<font face="宋体" >人气</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;3.2&nbsp;<font face="宋体" >商品搜索</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;&nbsp;<font face="宋体" >使用</font>es<font face="宋体" >搜索引擎服务</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >4<font face="宋体" >商品单品展示页</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&#9;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >4.1<font face="宋体" >商品信息展示</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&#9;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >4.2<font face="宋体" >图片展示&nbsp;</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&#9;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >4.3<font face="宋体" >库存量展示</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >4.4<font face="宋体" >商品分享功能</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >4.5<font face="宋体" >推荐信息展示</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:6.5000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >（通过大数据接口分析出用户推荐信息）</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >5<font face="宋体" >购买</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="text-indent:30.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" >5.1<font face="宋体" >订单信息填写</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="text-indent:30.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" >5.2&nbsp;<font face="宋体" >订单提交</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >6<font face="宋体" >订单查询</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&#9;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&#9;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >6.1<font face="宋体" >订单页：展示订单信息</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >6.2<font face="宋体" >个人信息维护：配送信息维护</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="text-indent:30.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;6.3<font face="宋体" >未支付订单继续支付</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="text-indent:30.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal ><b><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-weight:bold;font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >后台管理系统：</font></span></b><b><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-weight:bold;font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></b></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >订单模块：</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:6.5000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >描述：订单商品涉及三种：</font>1&nbsp;<font face="宋体" >自有商品</font><font face="Cambria" >2&nbsp;</font><font face="宋体" >异业商品&nbsp;（商户自有商品）</font><font face="Cambria" >3</font><font face="宋体" >供应商商品（资源池中的商品）</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:6.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:6.5000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >仓储系统可通过后台查看订单信息，操作订单备货信息，配送信息</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:6.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="mso-outline-level:1;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:6.5000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >（仅支持自有商品备货，配送）</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:6.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:-36.0000pt;mso-char-indent-count:0.0000;mso-list:l1 level1 lfo1;" ><![if !supportLists]><span style="font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><span style='mso-list:Ignore;' >1、<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >订单管理</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:58.0000pt;text-indent:-22.0000pt;mso-char-indent-count:0.0000;mso-list:l0 level2 lfo2;" ><![if !supportLists]><span style="font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><span style='mso-list:Ignore;' >1.1<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >订单按时间查询</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:58.0000pt;text-indent:-22.0000pt;mso-char-indent-count:0.0000;mso-list:l0 level2 lfo2;" ><![if !supportLists]><span style="font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><span style='mso-list:Ignore;' >1.2<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >订单类型查询</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:58.0000pt;text-indent:-22.0000pt;mso-char-indent-count:0.0000;mso-list:l0 level2 lfo2;" ><![if !supportLists]><span style="font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><span style='mso-list:Ignore;' >1.3<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >订单号查询</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:58.0000pt;text-indent:-22.0000pt;mso-char-indent-count:0.0000;mso-list:l0 level2 lfo2;" ><![if !supportLists]><span style="font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><span style='mso-list:Ignore;' >1.4<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >详细信息展示</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.5<font face="宋体" >订单取消</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:-36.0000pt;mso-char-indent-count:0.0000;mso-list:l1 level1 lfo1;" ><![if !supportLists]><span style="font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><span style='mso-list:Ignore;' >2、<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >备货管理</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >2.1&nbsp;<font face="宋体" >备货单查询</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >2.2&nbsp;<font face="宋体" >实物商品串号导入&#8212;&#8212;》终端管理系统串号的保存&nbsp;出库等</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >2</span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >.3&nbsp;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >备货确认</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:-36.0000pt;mso-char-indent-count:0.0000;mso-list:l1 level1 lfo1;" ><![if !supportLists]><span style="font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><span style='mso-list:Ignore;' >3、<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >支付单一览</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >3.1&nbsp;<font face="宋体" >支付单查询</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >3.2&nbsp;<font face="宋体" >支付单退款</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >3.3&nbsp;<font face="宋体" >退款审核</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:-36.0000pt;mso-char-indent-count:0.0000;mso-list:l1 level1 lfo1;" ><![if !supportLists]><span style="font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><span style='mso-list:Ignore;' >4、<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >配送单一览</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="text-indent:30.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >4.1&nbsp;<font face="宋体" >配送单查询</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="text-indent:30.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >4.2&nbsp;<font face="宋体" >配送单详情</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.3<font face="宋体" >实时物流信息展示&nbsp;&#8212;&#8212;》仓储系统接口获取实时物流信息</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="text-indent:30.0000pt;" ><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >商品模块：</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >商品表属性：</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >商品信息</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >是否上线（</font>0<font face="宋体" >待审批&nbsp;</font><font face="Cambria" >1</font><font face="宋体" >审批通过&nbsp;</font><font face="Cambria" >2</font><font face="宋体" >上线&nbsp;</font><font face="Cambria" >3</font><font face="宋体" >下线&nbsp;）注：</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';color:rgb(255,0,0);font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >审批和待审批针对异业商品</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >商品等级（对应资源池商品等级</font>&nbsp;<font face="宋体" >对应店铺等级）</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >商品所属店铺</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >商品类型</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >描述：商品涉及三种（</font>1<font face="宋体" >自有商品</font><font face="Cambria" >2</font><font face="宋体" >异业商品</font><font face="Cambria" >3</font><font face="宋体" >供应商商品）</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=15  style="margin-left:37.0000pt;text-indent:-37.0000pt;mso-char-indent-count:0.0000;mso-list:l2 level1 lfo3;" ><![if !supportLists]><span style="font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><span style='mso-list:Ignore;' >1、<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >商品配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.1<font face="宋体" >商户异业商品配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >描述：商品由店铺自行配置本店铺商品，展示在自己的店铺商品列表中，物流由店铺自己联系配送</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&#9;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.1.1<font face="宋体" >商品标签配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&#9;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.1.2<font face="宋体" >价格配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:57.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;1.1.3<font face="宋体" >库存配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:51.0000pt;text-indent:12.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.1.4<font face="宋体" >详情描述</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:45.0000pt;text-indent:18.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.1.5<font face="宋体" >商品分类</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:42.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.1.6<font face="宋体" >配置商品图片</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;text-indent:21.0000pt;mso-outline-level:1;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.2<font face="宋体" >资源池商品配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >描述：资源池商品由供应商（例如：京东）提供，管理员负责导入到资源池系统</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:42.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.2.1<font face="宋体" >供应商商品配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:42.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.2.2<font face="宋体" >商品标签配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&#9;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.2.3<font face="宋体" >价格配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:57.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;1.2.4<font face="宋体" >库存配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:57.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;1.2.5&nbsp;<font face="宋体" >商户可选最大库存配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:42.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.2.6<font face="宋体" >详情描述</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:63.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.2.7<font face="宋体" >商品分类</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:63.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.2.8<font face="宋体" >配置商品图片</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:42.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.2.9<font face="宋体" >商品等级配置（指定店铺等级可销售）</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.3<font face="宋体" >自有商品信息配置</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >描述：商品归属于北京移动资产，库存等信息从终端系统接口获取，因为商品存在于终端系统，所以需要根据终端系统商品编号来调用借口配置，商品配置过程中涉及商品编号映射（例如：商品在终端系统编号为</font>123<font face="宋体" >，需要映射为云商盟商品编号</font><font face="Cambria" >456</font><font face="宋体" >），物流走北京移动自建物流</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >，</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.3.1<font face="宋体" >终端产品配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&#9;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.3.1<font face="宋体" >商品标签配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:36.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&#9;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.3.2<font face="宋体" >价格配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:57.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;1.3.3<font face="宋体" >库存配置</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:51.0000pt;text-indent:12.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.3.4<font face="宋体" >详情描述</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:45.0000pt;text-indent:18.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.3.5<font face="宋体" >商品分类</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:42.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1.3.6<font face="宋体" >配置商品图片</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=15  style="margin-left:37.0000pt;text-indent:-37.0000pt;mso-char-indent-count:0.0000;mso-list:l2 level1 lfo3;" ><![if !supportLists]><span style="font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><span style='mso-list:Ignore;' >2、<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >商品信息查询</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:37.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >描述：根据登陆商铺信息可查询展示自己店铺的商品，管理员可查全部商品</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:37.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >2<font face="宋体" >．</font><font face="Cambria" >1&nbsp;</font><font face="宋体" >根据商品名称模糊查询</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:37.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >2<font face="宋体" >．</font><font face="Cambria" >2&nbsp;</font><font face="宋体" >商品信息单品展示</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:37.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >2<font face="宋体" >．</font><font face="Cambria" >3&nbsp;</font><font face="宋体" >商品信息列表展示</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:37.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >2<font face="宋体" >．</font><font face="Cambria" >4&nbsp;</font><font face="宋体" >商品分配查询</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:16.0000pt;text-indent:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >2<font face="宋体" >．</font><font face="Cambria" >5&nbsp;</font><font face="宋体" >商品配置预览</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:37.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=15  style="margin-left:37.0000pt;text-indent:-37.0000pt;mso-char-indent-count:0.0000;mso-list:l2 level1 lfo3;" ><![if !supportLists]><span style="font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><span style='mso-list:Ignore;' >3、<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >资源池商品分配</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:37.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;&nbsp;<font face="宋体" >描述：</font>&nbsp;<font face="宋体" >资源池中商品所有商户可见，根据商品配置的等级，商户可以按照自己店铺的等级自选商品，或者由移动管理员分配商品到指定店铺</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:37.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >3.1&nbsp;<font face="宋体" >按等级资源自选</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:37.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >3.2&nbsp;<font face="宋体" >管理员资源分配</font></span><span style="mso-spacerun:'yes';font-family:Cambria;mso-fareast-font-family:宋体;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><b><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-weight:bold;font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >店铺模块</font></span></b><b><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-weight:bold;font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&#9;</span></b><b><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-weight:bold;font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></b></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >1<font face="宋体" >店铺管理</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&#9;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >云商盟首页商品配置</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >&#9;</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >店铺首页商品配置</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;mso-para-margin-left:1.7500gd;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >店铺创建</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;mso-para-margin-left:1.7500gd;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >店铺开启关闭</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;mso-para-margin-left:1.7500gd;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >店铺等级配置</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;mso-para-margin-left:1.7500gd;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >店铺黑名单管理</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;mso-para-margin-left:1.7500gd;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >店铺经纬度配置</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >2<font face="宋体" >店铺装修功能</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;mso-para-margin-left:1.7500gd;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >H5<font face="宋体" >店铺页面后台配置</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;mso-para-margin-left:1.7500gd;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >店铺信息配置</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;mso-para-margin-left:1.7500gd;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >店铺宣传图片配置</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:21.0000pt;mso-para-margin-left:1.7500gd;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >配置店铺首页预览</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >3<font face="宋体" >商品管理</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:22.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >异业商品审核</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >4<font face="宋体" >供应商管理</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:22.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >供应商审核</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" >5<font face="宋体" >店铺酬金统计</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=15  style="margin-left:22.0000pt;text-indent:0.0000pt;mso-char-indent-count:0.0000;" ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><font face="宋体" >描述：通过渠道接口获取统计信息</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-family:'Times New Roman';font-size:9.0000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p></div><!--EndFragment--></body></html>
+
+
+
+
+
+
             </li>
         </ul>
     </div>
