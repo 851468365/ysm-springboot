@@ -44,6 +44,16 @@ spring:
 mybatis:
     mapperLocations: classpath*:com/ai/ysm/**/**/**/*.xml
     configLocation: classpath:mybatis.xml
+    
+    
+#pagehelper分页插件配置
+pagehelper:
+    helper-dialect: mysql
+    row-bounds-with-count: true
+    #pageSizeZero: true
+    reasonable: true
+    support-methods-arguments: true
+    params: count=countSql
 
 renren:
     redis:
